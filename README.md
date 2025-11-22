@@ -8,7 +8,7 @@ These files are configured to work together for a consistent and efficient workf
 
 - `i3` – tiling window manager
 - `polybar` – status bar with custom modules
-- `rofi` – application launcher and menu (gruvbox-dark-hard theme)
+- `rofi` – application launcher and menu
 - `kitty` – terminal emulator (supports GPU rendering)
 - `starship` – customized shell prompt with git integration
 - `mpd` – music player daemon configuration
@@ -102,3 +102,20 @@ ln -s ~/Github/dotfiles/ranger ~/.config/ranger
    ```bash
    eval "$(starship init bash)"  # or 'zsh' for zsh
    ```
+
+## Resources
+
+For more information about the tools used in this setup:
+
+- [i3 Window Manager](https://i3wm.org/)
+- [Polybar](https://polybar.github.io/)
+- [Rofi](https://davatorium.github.io/rofi/)
+- [Picom](https://github.com/yshui/picom)
+- [Kitty Terminal](https://sw.kovidgoyal.net/kitty/quickstart/)
+- [Starship Prompt](https://starship.rs/)
+- [Music Player Daemon (MPD)](https://www.musicpd.org/)
+- [RMPC](https://rmpc.mierak.dev/)
+- [Ranger File Manager](https://ranger.fm/)
+
+## License
+Feel free to use and modify these configurations as you wish.
