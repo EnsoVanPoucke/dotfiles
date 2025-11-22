@@ -1,8 +1,8 @@
 # dotfiles
 
-This repository contains my personal configuration files (dotfiles) for various command-line tools and development environments.
+This repository contains my personal **Debian Linux** configuration files (dotfiles).
 
-These configs are part of my **custom Debian setup**, carefully configured to work together for a consistent and efficient workflow. While they can be used as a reference or starting point for your own setup, some adjustments may be necessary on other systems.
+These files are configured to work together for a consistent and efficient workflow. While they can be used as a reference or starting point for your own setup, some adjustments may be necessary on other systems.
 
 ## Contents
 
