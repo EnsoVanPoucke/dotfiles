@@ -1,6 +1,4 @@
 # dotfiles
-dot files
-# dotfiles
 
 This repository contains my personal configuration files (dotfiles) for various command-line tools and development environments. These dotfiles help set up a consistent and productive environment across different machines.
 
@@ -17,4 +15,4 @@ This repository contains my personal configuration files (dotfiles) for various 
 
 You can install these dotfiles by cloning the repository and creating symbolic links to your home directory. For example:
 
-Nog wat test tekst hier.
+Nog wat tekst hier en daar om te testen.
