@@ -2,6 +2,7 @@
 
 # Dotfiles Installation Script
 # This script creates symbolic links for all configuration files
+# Usage: ./install.sh [--dry-run]
 
 set -e
 
@@ -9,7 +10,14 @@ set -e
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 YELLOW='\033[1;33m'
+CYAN='\033[0;36m'
 NC='\033[0m' # No Color
+
+# Check for dry-run flag
+DRY_RUN=false
+if [[ "$1" == "--dry-run" ]]; then
+    DRY_RUN=true
+fi
 
 # Get the directory where this script is located
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -17,12 +25,25 @@ CONFIG_DIR="$HOME/.config"
 
 echo -e "${BLUE}=====================================${NC}"
 echo -e "${BLUE}   Dotfiles Installation Script${NC}"
+if [ "$DRY_RUN" = true ]; then
+    echo -e "${CYAN}         (DRY RUN MODE)${NC}"
+fi
 echo -e "${BLUE}=====================================${NC}\n"
 
 # Function to create symlink with backup
 create_symlink() {
     local source="$1"
     local target="$2"
+    
+    if [ "$DRY_RUN" = true ]; then
+        echo -e "${CYAN}[DRY RUN]${NC} Would link: $target -> $source"
+        if [ -e "$target" ] && [ ! -L "$target" ]; then
+            echo -e "${CYAN}[DRY RUN]${NC} Would backup: ${target} to ${target}.backup"
+        elif [ -L "$target" ]; then
+            echo -e "${CYAN}[DRY RUN]${NC} Would remove existing symlink: $target"
+        fi
+        return
+    fi
     
     # Create target directory if it doesn't exist
     mkdir -p "$(dirname "$target")"
@@ -107,7 +128,13 @@ if [ -f "$DOTFILES_DIR/wallpapers/DesktopWallpaper.png" ]; then
 fi
 
 echo -e "\n${BLUE}=====================================${NC}"
-echo -e "${GREEN}Installation complete!${NC}"
-echo -e "${BLUE}=====================================${NC}\n"
-echo -e "${YELLOW}Note:${NC} If you had existing configurations, they have been backed up with a .backup extension."
-echo -e "${YELLOW}Note:${NC} You may need to reload your window manager (Mod+Shift+R in i3) for changes to take effect.\n"
+if [ "$DRY_RUN" = true ]; then
+    echo -e "${CYAN}Dry run complete! No changes were made.${NC}"
+    echo -e "${BLUE}=====================================${NC}\n"
+    echo -e "To actually install, run: ${GREEN}./install.sh${NC}\n"
+else
+    echo -e "${GREEN}Installation complete!${NC}"
+    echo -e "${BLUE}=====================================${NC}\n"
+    echo -e "${YELLOW}Note:${NC} If you had existing configurations, they have been backed up with a .backup extension."
+    echo -e "${YELLOW}Note:${NC} You may need to reload your window manager (Mod+Shift+R in i3) for changes to take effect.\n"
+fi
