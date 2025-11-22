@@ -11,9 +11,9 @@ These files are configured to work together for a consistent and efficient workf
 - `rofi` – application launcher and menu
 - `kitty` – terminal emulator (supports GPU rendering)
 - `starship` – customized shell prompt with git integration
+- `ranger` – terminal file manager
 - `mpd` – music player daemon configuration
 - `rmpc` – terminal MPD client with Catppuccin Mocha theme
-- `ranger` – terminal file manager
 - `picom` – compositor for transparency and visual effects
 - `wallpapers` – desktop wallpaper included for a complete setup
 
@@ -79,14 +79,14 @@ mkdir -p ~/.config
 
 # Link individual configs
 ln -s ~/Github/dotfiles/i3 ~/.config/i3
-ln -s ~/Github/dotfiles/kitty ~/.config/kitty
 ln -s ~/Github/dotfiles/polybar ~/.config/polybar
 ln -s ~/Github/dotfiles/rofi ~/.config/rofi
-ln -s ~/Github/dotfiles/picom ~/.config/picom
+ln -s ~/Github/dotfiles/kitty ~/.config/kitty
 ln -s ~/Github/dotfiles/starship ~/.config/starship
+ln -s ~/Github/dotfiles/ranger ~/.config/ranger
 ln -s ~/Github/dotfiles/mpd ~/.config/mpd
 ln -s ~/Github/dotfiles/rmpc ~/.config/rmpc
-ln -s ~/Github/dotfiles/ranger ~/.config/ranger
+ln -s ~/Github/dotfiles/picom ~/.config/picom
 ```
 
 ### Post-Installation
@@ -110,12 +110,12 @@ For more information about the tools used in this setup:
 - [i3 Window Manager](https://i3wm.org/)
 - [Polybar](https://polybar.github.io/)
 - [Rofi](https://davatorium.github.io/rofi/)
-- [Picom](https://github.com/yshui/picom)
 - [Kitty Terminal](https://sw.kovidgoyal.net/kitty/quickstart/)
 - [Starship Prompt](https://starship.rs/)
+- [Ranger File Manager](https://ranger.fm/)
 - [Music Player Daemon (MPD)](https://www.musicpd.org/)
 - [RMPC](https://rmpc.mierak.dev/)
-- [Ranger File Manager](https://ranger.fm/)
+- [Picom](https://github.com/yshui/picom)
 
 ## License
 Feel free to use and modify these configurations as you wish.
