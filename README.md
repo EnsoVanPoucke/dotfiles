@@ -17,3 +17,4 @@ This repository contains my personal configuration files (dotfiles) for various 
 
 You can install these dotfiles by cloning the repository and creating symbolic links to your home directory. For example:
 
+Nog wat test tekst hier.
