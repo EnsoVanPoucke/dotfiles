@@ -16,8 +16,6 @@ These configs are part of my **custom Debian setup**, carefully configured to wo
 - `rmpc` – terminal mpd client
 - `ranger` – terminal file manager
 
-- Other configuration files for tools and editors
-
 ## Installation
 
 ⚠️ **Note:** These dotfiles are configured for my personal Debian setup. Some paths, programs, or settings may need to be adjusted on your system.
@@ -31,5 +29,6 @@ cd ~/dotfiles
 
 # Example: link i3 config
 ln -s ~/dotfiles/i3/config ~/.config/i3/config
+´´´
 
 # Repeat for other configs
