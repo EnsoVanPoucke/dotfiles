@@ -10,7 +10,7 @@ These files are configured to work together for a consistent and efficient workf
 - `polybar` – status bar with custom modules
 - `rofi` – application launcher and menu (gruvbox-dark-hard theme)
 - `picom` – compositor for transparency and visual effects
-- `kitty` – terminal emulator with custom opacity and colors
+- `kitty` – terminal emulator with custom opacity and colors (supports GPU rendering)
 - `starship` – customized shell prompt with git integration
 - `mpd` – music player daemon configuration
 - `rmpc` – terminal MPD client with Catppuccin Mocha theme
@@ -42,10 +42,8 @@ sudo apt install mpd ranger
 
 ### Fonts
 - **CaskaydiaCove Nerd Font** (required for icons in kitty and starship)
-  ```bash
-  # Download from: https://www.nerdfonts.com/
-  # Or install via your package manager
-  ```
+  Download from: https://www.nerdfonts.com/
+  Or install via your package manager
 
 ### Optional
 - `starship` – Modern shell prompt ([installation guide](https://starship.rs/guide/#-installation))
