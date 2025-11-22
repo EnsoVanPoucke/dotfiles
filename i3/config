@@ -11,17 +11,9 @@
 
 
 
-
-
-
-
-# added 2025
-
 # variables
-set $themePath ~/.config
-set $desktopWallpaper ~/Github/dotfiles/wallpapers/DesktopWallpaper.png
+set $desktopWallpaper ~/Github/dotfiles/wallpapers/desktop_wallpaper.png
 set $screenshotsPath ~/Pictures/Screenshots
-
 set $bckgrnd #1e1d20
 set $forgrnd #ff5500
 set $bar_bckgrnd #00000000
@@ -41,8 +33,10 @@ set $transparent #00000000
 
 
 
-# executions
+# keyboard layout
 exec_always --no-startup-id setxkbmap be -model pc105 -layout be
+
+# desktop wallpaper
 exec_always --no-startup-id feh --bg-fill $desktopWallpaper
 
 # polybar (instead of the default i3 statusbar
@@ -63,12 +57,6 @@ exec --no-startup-id xset dpms 0 0 0
 
 # picom
 exec_always --no-startup-id /usr/local/bin/picom -b --config ~/.config/picom/picom.conf
-
-# scrot fullscreen screenshot
-bindsym Print exec --no-startup-id scrot $screenshotsPath/%Y%m%d_%H%M%S.jpg
-
-
-
 
 
 
@@ -110,6 +98,9 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
+# scrot fullscreen screenshot
+bindsym Print exec --no-startup-id scrot $screenshotsPath/%Y%m%d_%H%M%S.jpg
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -118,7 +109,6 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Return exec ~/.local/kitty.app/bin/kitty
 
 # kill focused window
@@ -260,11 +250,6 @@ bindsym $mod+r mode "resize"
 
 
 
-
-
-
-
-
 # class                 border		backgrnd	text		indicator	child_border
 #client.focused		#ff5500		$bckgrnd        $txt_focus	$newBorderClrs	$newBorderClrs
 #client.focused_inactive $forgrnd	$bckgrnd        $txt_focus_in	$transparent	$transparent
@@ -272,7 +257,6 @@ bindsym $mod+r mode "resize"
 #Client.urgent           $transparent	$transparent    $transparent    $transparent	$transparent
 #client.placeholder      $transparent	$transparent    $transparent	$transparent	$transparent
 #client.background       #555555
-
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #ff5500 #285577 #ffffff #bbbbbb   #bbbbbb
@@ -285,73 +269,16 @@ client.background       $transparent
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-#bar {
-#        status_command i3status --config ~/.config/i3status.conf
-#}
-
-
-
-# floating_minimum_size <width> x <height>
-# floating_maximum_size <width> x <height>
-floating_minimum_size 800 x 800
+# size <width> x <height>
+floating_minimum_size 400 x 300
 floating_maximum_size 2000 x 1600
 
 
 
-
-
-# default_border pixel 10
 default_border pixel 2
 default_floating_border none
 gaps inner 10
 gaps outer 10
-# hide_edge_borders has replaced the old smart_borders syntax!!!
-#hide_edge_borders smart
-
-
-
-#smart_borders on
-#smart_gaps on
-
-
-
-
-
-
-
-
-#default_border normal|none|pixel
-#default_border normal|pixel <px>
-#default_floating_border normal|none|pixel
-#default_floating_border normal|pixel <px>
-
-#hide_edge_borders none|vertical|horizontal|both|smart|smart_no_gaps
-
-
-
 
 
 
