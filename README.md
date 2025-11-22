@@ -6,23 +6,23 @@ These files are configured to work together for a consistent and efficient workf
 
 ## Contents
 
-- `i3` – i3 tiling window manager configuration
+- `i3` – tiling window manager
 - `polybar` – status bar with custom modules
 - `rofi` – application launcher and menu (gruvbox-dark-hard theme)
-- `picom` – compositor for transparency and visual effects
-- `kitty` – terminal emulator with custom opacity and colors (supports GPU rendering)
+- `kitty` – terminal emulator (supports GPU rendering)
 - `starship` – customized shell prompt with git integration
 - `mpd` – music player daemon configuration
 - `rmpc` – terminal MPD client with Catppuccin Mocha theme
 - `ranger` – terminal file manager
+- `picom` – compositor for transparency and visual effects
 - `wallpapers` – desktop wallpaper included for a complete setup
 
 ## Features
 
-- **Consistent color scheme**: Custom orange accent (#FF5500) across i3, polybar, and starship
+- **Consistent color scheme**: Custom color scheme across i3, polybar, starship, rmpc, wallpaper,...
 - **Nerd Font support**: Icons and glyphs throughout the terminal and prompt
-- **Transparency**: Kitty terminal with 88% opacity for a modern look
-- **Belgian keyboard layout**: Preconfigured for Belgian AZERTY layout
+- **Transparency**: 88% opacity for a modern look
+- **Belgian keyboard layout**: Preconfigured for Belgian AZERTY iso layout
 - **Music setup**: Complete MPD + RMPC configuration with custom theme
 - **Gruvbox aesthetics**: Rofi themed with gruvbox-dark-hard
 
@@ -102,35 +102,3 @@ ln -s ~/Github/dotfiles/ranger ~/.config/ranger
    ```bash
    eval "$(starship init bash)"  # or 'zsh' for zsh
    ```
-
-## Troubleshooting
-
-### Polybar not launching
-- Check if polybar is installed: `which polybar`
-- View polybar logs: `cat /tmp/polybar.log`
-- Ensure the launch script is executable: `chmod +x ~/.config/polybar/launch.sh`
-
-### Icons not showing
-- Install CaskaydiaCove Nerd Font or another Nerd Font
-- Verify font installation: `fc-list | grep Caskaydia`
-- Restart kitty after font installation
-
-### Keyboard layout issues
-- The i3 config sets Belgian layout by default
-- Change in `i3/config`: `exec_always --no-startup-id setxkbmap <your-layout>`
-
-### Rofi theme not found
-- Install rofi themes: `sudo apt install rofi-themes`
-- Or change theme in `rofi/config.rasi` to one you have installed
-
-## Customization
-
-Feel free to customize these configs to your liking:
-
-- **Colors**: Main accent color `#FF5500` is defined in `i3/config` variables
-- **Keybindings**: Check `i3/config` for all key combinations
-- **Wallpaper**: Replace `wallpapers/DesktopWallpaper.png` with your own or update the path in i3 config
-- **Terminal opacity**: Adjust in `kitty/kitty.conf` (`background_opacity`)
-
-## License
-Feel free to use and modify these configurations as you wish.
