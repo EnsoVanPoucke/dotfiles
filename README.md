@@ -20,15 +20,16 @@ These configs are part of my **custom Debian setup**, carefully configured to wo
 
 ⚠️ **Note:** These dotfiles are configured for my personal Debian setup. Some paths, programs, or settings may need to be adjusted on your system.
 
+### Clone the repo
 ```bash
-# Clone the repo
 git clone https://github.com/EnsoVanPoucke/dotfiles.git ~/dotfiles
+```
 
-# Navigate to the repo
-cd ~/dotfiles
+Navigate to the repo
 
-# Example: link i3 config
+### Example: link i3 config
+```bash
 ln -s ~/dotfiles/i3/config ~/.config/i3/config
 ```
 
-# Repeat for other configs
+### Repeat for other configs
