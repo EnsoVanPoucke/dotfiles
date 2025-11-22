@@ -99,6 +99,13 @@ if [ -d "$DOTFILES_DIR/ranger" ]; then
     create_symlink "$DOTFILES_DIR/ranger" "$CONFIG_DIR/ranger"
 fi
 
+# Wallpaper
+if [ -f "$DOTFILES_DIR/wallpapers/DesktopWallpaper.png" ]; then
+    echo -e "\n${BLUE}[wallpaper]${NC}"
+    echo -e "${GREEN}✓${NC} Wallpaper found: wallpapers/DesktopWallpaper.png"
+    echo -e "  Wallpaper will be loaded automatically by i3 on next login/reload"
+fi
+
 echo -e "\n${BLUE}=====================================${NC}"
 echo -e "${GREEN}Installation complete!${NC}"
 echo -e "${BLUE}=====================================${NC}\n"

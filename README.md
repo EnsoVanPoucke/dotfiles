@@ -15,6 +15,7 @@ These configs are part of my **custom Debian setup**, carefully configured to wo
 - `mpd` – music player daemon configuration
 - `rmpc` – terminal MPD client with Catppuccin Mocha theme
 - `ranger` – terminal file manager
+- `wallpapers` – desktop wallpaper included for a complete setup
 
 ## Features
 
@@ -94,9 +95,9 @@ ln -s ~/Github/dotfiles/ranger ~/.config/ranger
 
 ### Post-Installation
 
-1. **Set your wallpaper**: Update the path in `i3/config`:
+1. **Set your wallpaper**: The included wallpaper will be used automatically. Alternatively, update the path in `i3/config`:
    ```bash
-   set $desktopWallpaper ~/Pictures/Backgrounds/DesktopWallpaper.png
+   set $desktopWallpaper ~/Github/dotfiles/wallpapers/DesktopWallpaper.png
    ```
 
 2. **Reload i3**: Press `Mod+Shift+R` or log out and back in
@@ -132,9 +133,8 @@ Feel free to customize these configs to your liking:
 
 - **Colors**: Main accent color `#FF5500` is defined in `i3/config` variables
 - **Keybindings**: Check `i3/config` for all key combinations
-- **Wallpaper**: Set your preferred wallpaper path in i3 config
+- **Wallpaper**: Replace `wallpapers/DesktopWallpaper.png` with your own or update the path in i3 config
 - **Terminal opacity**: Adjust in `kitty/kitty.conf` (`background_opacity`)
 
 ## License
-
-MIT License - Feel free to use and modify these configurations as you wish.
+Feel free to use and modify these configurations as you wish.

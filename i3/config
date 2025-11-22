@@ -19,7 +19,7 @@
 
 # variables
 set $themePath ~/.config
-set $desktopWallpaper ~/Pictures/Backgrounds/DesktopWallpaper.png
+set $desktopWallpaper ~/Github/dotfiles/wallpapers/DesktopWallpaper.png
 set $screenshotsPath ~/Pictures/Screenshots
 
 set $bckgrnd #1e1d20
