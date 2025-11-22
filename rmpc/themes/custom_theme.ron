@@ -2,7 +2,7 @@
 #![enable(unwrap_newtypes)]
 #![enable(unwrap_variant_newtypes)]
 (
-    default_album_art_path: None,
+    default_album_art_path: Some("~/.config/rmpc/themes/default_album_art.jpg"),
     draw_borders: true,
     show_song_table_header: true,
     browser_column_widths: [20, 38, 42],

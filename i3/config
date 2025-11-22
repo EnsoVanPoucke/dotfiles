@@ -119,7 +119,7 @@ tiling_drag modifier titlebar
 
 # start a terminal
 #bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec /home/enso/.local/kitty.app/bin/kitty
+bindsym $mod+Return exec ~/.local/kitty.app/bin/kitty
 
 # kill focused window
 bindsym $mod+Shift+a kill

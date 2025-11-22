@@ -4,7 +4,7 @@
 (
     address: "127.0.0.1:6600",
     password: None,
-    theme: "catppuccin_mocha",
+    theme: "custom_theme",
     cache_dir: None,
     on_song_change: None,
     volume_step: 5,
@@ -127,9 +127,9 @@
         (
             name: "Queue",
             pane: Split(
-		        direction: Horizontal,
-		        panes: [(size: "80%", pane: Pane(Queue)), (size: "20%", pane: Pane(AlbumArt))]
-		    )
+		direction: Horizontal,
+		panes: [(size: "80%", pane: Pane(Queue)), (size: "20%", pane: Pane(AlbumArt))]
+		)
         ),
         (
             name: "Directories",
