@@ -91,13 +91,6 @@ ln -s ~/Github/dotfiles/picom ~/.config/picom
 
 ### Post-Installation
 
-1. **Set your wallpaper**: The included wallpaper will be used automatically. Alternatively, update the path in `i3/config`:
-   ```bash
-   set $desktopWallpaper ~/Github/dotfiles/wallpapers/DesktopWallpaper.png
-   ```
-
-2. **Reload i3**: Press `Mod+Shift+R` or log out and back in
-
 3. **Enable starship**: Add to your `~/.bashrc` or `~/.zshrc`:
    ```bash
    eval "$(starship init bash)"  # or 'zsh' for zsh
