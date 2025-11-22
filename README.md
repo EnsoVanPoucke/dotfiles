@@ -1,6 +1,6 @@
 # dotfiles
 
-This repository contains my personal **Debian Linux** configuration files (dotfiles).
+This repository contains my personal **Linux** dot config files (dotfiles).
 
 These files are configured to work together for a consistent and efficient workflow. While they can be used as a reference or starting point for your own setup, some adjustments may be necessary on other systems.
 
@@ -17,6 +17,8 @@ These files are configured to work together for a consistent and efficient workf
 - `picom` – compositor for transparency and visual effects
 - `wallpapers` – desktop wallpaper included for a complete setup
 
+
+
 ## Features
 
 - **Consistent color scheme**: Custom color scheme across i3, polybar, starship, rmpc, wallpaper,...
@@ -26,75 +28,27 @@ These files are configured to work together for a consistent and efficient workf
 - **Music setup**: Complete MPD + RMPC configuration with custom theme
 - **Gruvbox aesthetics**: Rofi themed with gruvbox-dark-hard
 
-## Prerequisites
 
-Before installing these dotfiles, ensure you have the following packages installed:
-
-### Core Requirements
-```bash
-sudo apt install i3 polybar rofi picom kitty feh
-```
-
-### Additional Tools
-```bash
-sudo apt install mpd ranger
-```
-
-### Fonts
-- **CaskaydiaCove Nerd Font** (required for icons in kitty and starship)
-  Download from: https://www.nerdfonts.com/
-  Or install via your package manager
-
-### Optional
-- `starship` – Modern shell prompt ([installation guide](https://starship.rs/guide/#-installation))
-- `rmpc` – Rust Music Player Client ([installation guide](https://github.com/mierak/rmpc))
 
 ## Installation
 
-### Quick Install (Recommended)
-
-Clone the repository and run the installation script:
+Clone the repository:
 
 ```bash
 git clone https://github.com/EnsoVanPoucke/dotfiles.git ~/Github/dotfiles
-cd ~/Github/dotfiles
-./install.sh
 ```
 
-The script will:
-- Create symbolic links for all configurations
-- Backup any existing configs with a `.backup` extension
-- Set up the proper directory structure
 
-### Manual Installation
 
-If you prefer to install configurations individually:
+## Requirements
 
-```bash
-# Clone the repository
-git clone https://github.com/EnsoVanPoucke/dotfiles.git ~/Github/dotfiles
+### Fonts
+- **CaskaydiaCove Nerd Font**
+  Download from: https://www.nerdfonts.com/font-downloads
 
-# Create config directory if needed
-mkdir -p ~/.config
-
-# Link individual configs
-ln -s ~/Github/dotfiles/i3 ~/.config/i3
-ln -s ~/Github/dotfiles/polybar ~/.config/polybar
-ln -s ~/Github/dotfiles/rofi ~/.config/rofi
-ln -s ~/Github/dotfiles/kitty ~/.config/kitty
-ln -s ~/Github/dotfiles/starship ~/.config/starship
-ln -s ~/Github/dotfiles/ranger ~/.config/ranger
-ln -s ~/Github/dotfiles/mpd ~/.config/mpd
-ln -s ~/Github/dotfiles/rmpc ~/.config/rmpc
-ln -s ~/Github/dotfiles/picom ~/.config/picom
-```
-
-### Post-Installation
-
-3. **Enable starship**: Add to your `~/.bashrc` or `~/.zshrc`:
-   ```bash
-   eval "$(starship init bash)"  # or 'zsh' for zsh
-   ```
+## Installation guides
+- `starship` – Modern shell prompt ([installation guide](https://starship.rs/guide/#-installation))
+- `rmpc` – Rust Music Player Client ([installation guide](https://github.com/mierak/rmpc))
 
 ## Resources
 
