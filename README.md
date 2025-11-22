@@ -25,11 +25,7 @@ These configs are part of my **custom Debian setup**, carefully configured to wo
 git clone https://github.com/EnsoVanPoucke/dotfiles.git ~/dotfiles
 ```
 
-Navigate to the repo
-
 ### Example: link i3 config
 ```bash
 ln -s ~/dotfiles/i3/config ~/.config/i3/config
 ```
-
-### Repeat for other configs
