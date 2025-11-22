@@ -1,18 +1,31 @@
 # dotfiles
 
-This repository contains my personal configuration files (dotfiles) for various command-line tools and development environments. These dotfiles help set up a consistent and productive environment across different machines.
+This repository contains my personal configuration files (dotfiles) for various command-line tools and development environments.
 
 ## Contents
 
-- `.bashrc` – Bash shell configuration
-- `.zshrc` – Zsh shell configuration
-- `.vimrc` – Vim editor settings
-- `.gitconfig` – Git configuration
-- `.tmux.conf` – Tmux terminal multiplexer settings
+- `i3` – i3 tiling window manager
+- `polybar` – polybar status bar
+- `rofi` – application launcher and menu
+- `kitty` – terminal emulator
+- `starship` – shell prompt
+- `mpd` – music player daemon
+- `rmpc` – terminal mpd client
+- `picom` – compositor settings for transparency and animations
+- `ranger` – terminal file manager
+
 - Other configuration files for tools and editors
 
 ## Installation
 
-You can install these dotfiles by cloning the repository and creating symbolic links to your home directory. For example:
+```bash
+# Clone the repo
+git clone https://github.com/EnsoVanPoucke/dotfiles.git ~/dotfiles
 
-Nog wat tekst hier en daar om te testen.
+# Navigate to the repo
+cd ~/dotfiles
+
+# Example: link i3 config
+ln -s ~/dotfiles/i3/config ~/.config/i3/config
+
+# Repeat for other configs
