@@ -29,6 +29,6 @@ cd ~/dotfiles
 
 # Example: link i3 config
 ln -s ~/dotfiles/i3/config ~/.config/i3/config
-´´´
+```
 
 # Repeat for other configs
