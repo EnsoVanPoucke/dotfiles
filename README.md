@@ -53,8 +53,6 @@ sudo apt install mpd ranger
 
 ## Installation
 
-⚠️ **Note:** These dotfiles are configured for my personal Debian setup. Some paths, programs, or settings may need to be adjusted on your system.
-
 ### Quick Install (Recommended)
 
 Clone the repository and run the installation script:
