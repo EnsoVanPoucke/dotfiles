@@ -14,21 +14,21 @@
 # variables
 set $desktopWallpaper ~/Github/dotfiles/wallpapers/desktop_wallpaper.png
 set $screenshotsPath ~/Pictures/Screenshots
-set $bckgrnd #1e1d20
-set $forgrnd #ff5500
+set $bckgrnd #1E1D20
+set $forgrnd #FF5500
 set $bar_bckgrnd #00000000
-set $ch_border_focus #ff0000
-set $ch_border_focus_in #aaaaaa
-set $ch_border_urgent #1e1d20
-set $txt_focus #dbd6af
-set $txt_focus_in #1e1d20
-set $txt_unfocus #1e1d20
-set $txt_focus_ws #dbd6af
-set $txt_active_ws #dbd6af
+set $ch_border_focus #FF0000
+set $ch_border_focus_in #AAAAAA
+set $ch_border_urgent #1E1D20
+set $txt_focus #DBD6AF
+set $txt_focus_in #1E1D20
+set $txt_unfocus #1E1D20
+set $txt_focus_ws #DBD6AF
+set $txt_active_ws #DBD6AF
 set $txt_inactive_ws #666677
 set $txt_urgent_ws #666677
 set $txt_binding_mode #666677
-set $white #ffffff
+set $white #FFFFFF
 set $transparent #00000000
 
 
