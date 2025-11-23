@@ -45,7 +45,15 @@ For more information:
 
 ## Installing wallpapers
 
-First, navigate into the cloned **dotfiles** repository:
+By default, the i3 configuration file points to:
+
+**~/.local/share/backgrounds/desktop_wallpaper_4K.png**
+
+You can either change this path in the i3 config file where it says **$desktopWallpaper**, or copy the included images to this exact location.
+
+### Copy wallpapers
+
+First, navigate into the cloned **dotfiles** repository.
 
 Create the backgrounds folder if it doesn't exist, and copy the wallpapers into it:
 
@@ -53,5 +61,3 @@ Create the backgrounds folder if it doesn't exist, and copy the wallpapers into 
 mkdir -p ~/.local/share/backgrounds
 cp wallpapers/* ~/.local/share/backgrounds/
 ```
-
-Alternatively, you can change the **$desktopWallpaper** variable in the i3 config file to point to any location/wallpaper.
