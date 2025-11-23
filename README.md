@@ -51,11 +51,11 @@ By default, the i3 configuration file points to:
 
 You can either change this path in the i3 config file where it says **$desktopWallpaper**, or copy the included images to this exact location.
 
-### Copy wallpapers
+### Copy wallpapers to the default location
 
 First, navigate into the cloned **dotfiles** repository.
 
-Create the backgrounds folder if it doesn't exist, and copy the wallpapers into it:
+Then, create the backgrounds folder if it doesn't exist and copy the wallpapers into it:
 
 ```bash
 mkdir -p ~/.local/share/backgrounds
