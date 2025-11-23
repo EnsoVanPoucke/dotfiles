@@ -3,6 +3,10 @@
 These are my personal **Linux** dotfiles - a collection of configuration files.
 You’re welcome to use them as a reference or starting point for your own setup. Some tweaks may be necessary depending on your system.
 
+## Design philosophy
+
+This setup follows a modern, minimalistic, and visually appealing design. The goal is to reduce distractions while keeping the interface beautiful and intuitive, allowing you to stay focused and productive within your workflow. Every element — from window borders to the desktop wallpaper selection — is chosen to be functional without clutter, so your workspace feels clean and comfortable.
+
 ## Contents
 
 - `i3` – tiling window manager
@@ -38,3 +42,16 @@ For more information:
 - [RMPC](https://rmpc.mierak.dev/)
 - [Picom](https://github.com/yshui/picom)
 - [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
+
+## Installing wallpapers
+
+First, navigate into the cloned **dotfiles** repository:
+
+Create the backgrounds folder if it doesn't exist, and copy the wallpapers into it:
+
+```bash
+mkdir -p ~/.local/share/backgrounds
+cp wallpapers/* ~/.local/share/backgrounds/
+```
+
+Alternatively, you can change the desktopWallpaper variable in the i3 config file to point to any location you prefer.
