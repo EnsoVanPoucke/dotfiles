@@ -54,4 +54,4 @@ mkdir -p ~/.local/share/backgrounds
 cp wallpapers/* ~/.local/share/backgrounds/
 ```
 
-Alternatively, you can change the desktopWallpaper variable in the i3 config file to point to any location you prefer.
+Alternatively, you can change the **$desktopWallpaper** variable in the i3 config file to point to any location/wallpaper.
