@@ -14,15 +14,15 @@
 # variables
 set $desktopWallpaper ~/Github/dotfiles/wallpapers/desktop_wallpaper.png
 set $screenshotsPath ~/Pictures/Screenshots
-set $bckgrnd #1E1D20
+set $bckgrnd #1D1D1D
 set $forgrnd #FF5500
 set $bar_bckgrnd #00000000
 set $ch_border_focus #FF0000
 set $ch_border_focus_in #AAAAAA
-set $ch_border_urgent #1E1D20
+set $ch_border_urgent #1D1D1D
 set $txt_focus #DBD6AF
-set $txt_focus_in #1E1D20
-set $txt_unfocus #1E1D20
+set $txt_focus_in #1D1D1D
+set $txt_unfocus #1D1D1D
 set $txt_focus_ws #DBD6AF
 set $txt_active_ws #DBD6AF
 set $txt_inactive_ws #666677
@@ -259,11 +259,11 @@ bindsym $mod+r mode "resize"
 #client.background       #555555
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #ff5500 #285577 #ffffff #bbbbbb   #bbbbbb
-client.focused_inactive #333333 #5f676a #ffffff #444444   #444444
-client.unfocused        #333333 #222222 #888888 #444444   #444444
-client.urgent           #2f343a #900000 #ffffff #900000   #900000
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.focused          #ff5500 #1D1D1D #ffffff #bbbbbb   #bbbbbb
+client.focused_inactive #333333 #1D1D1D #ffffff #444444   #444444
+client.unfocused        #333333 #1D1D1D #888888 #444444   #444444
+client.urgent           #2f343a #1D1D1D #ffffff #900000   #900000
+client.placeholder      #000000 #1D1D1D #ffffff #000000   #0c0c0c
 
 client.background       $transparent
 
