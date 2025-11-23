@@ -5,7 +5,7 @@ You’re welcome to use them as a reference or starting point for your own setup
 
 ## Design philosophy
 
-This setup follows a modern, minimalistic, and visually appealing design. The goal is to reduce distractions while keeping the interface beautiful and intuitive, allowing you to stay focused and productive within your workflow. Every element — from window borders to the desktop wallpaper selection — is chosen to be functional without clutter, so your workspace feels clean and comfortable.
+A minimalistic, modern design built for maximum efficiency. The tiling window manager setup keeps every element functional and purposeful, with components customized to maintain a consistent, distraction-free environment.
 
 ## Contents
 
