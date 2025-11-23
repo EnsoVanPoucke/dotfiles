@@ -12,7 +12,7 @@
 
 
 # variables
-set $desktopWallpaper ~/Github/dotfiles/wallpapers/desktop_wallpaper.png
+set $desktopWallpaper ~/Github/dotfiles/wallpapers/desktop_wallpaper_4K.png
 set $screenshotsPath ~/Pictures/Screenshots
 set $bckgrnd #1D1D1D
 set $forgrnd #FF5500
