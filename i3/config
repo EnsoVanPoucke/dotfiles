@@ -59,8 +59,6 @@ exec_always --no-startup-id /usr/local/bin/picom -b --config ~/.config/picom/pic
 
 
 
-
-
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -246,16 +244,6 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-
-
-
-# class                 border		backgrnd	text		indicator	child_border
-#client.focused		#ff5500		$bckgrnd        $txt_focus	$newBorderClrs	$newBorderClrs
-#client.focused_inactive $forgrnd	$bckgrnd        $txt_focus_in	$transparent	$transparent
-#client.unfocused        $forgrnd	$bckgrnd        $txt_unfocus	$transparent	$ch_border_urgent
-#Client.urgent           $transparent	$transparent    $transparent    $transparent	$transparent
-#client.placeholder      $transparent	$transparent    $transparent	$transparent	$transparent
-#client.background       #555555
 
 # class                 border                  background              text                    indicator               child_border
 client.focused          $primary_orange         $primary_grey           $primary_white          $inactive_grey          $active_grey
