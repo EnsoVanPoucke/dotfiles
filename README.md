@@ -3,8 +3,6 @@
 These are my personal **Linux** dotfiles - a collection of configuration files. 
 You’re welcome to use them as a reference or starting point for your own setup.
 
-Some tweaks may be necessary depending on your system.
-
 ## Design philosophy
 
 A minimalistic, modern design built for maximum efficiency. The tiling window manager setup keeps every element functional and purposeful, with components customized to maintain a consistent, distraction-free environment.
