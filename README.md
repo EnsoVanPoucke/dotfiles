@@ -20,6 +20,7 @@ A minimalistic, modern design built for maximum efficiency. The tiling window ma
 - `mpd` – music player daemon
 - `rmpc` – terminal MPD client
 - `picom` – compositor
+- `vscode` – code editor settings and preferences
 - `wallpapers` – matching desktop wallpaper
 
 ## Get started
