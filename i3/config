@@ -14,22 +14,21 @@
 # variables
 set $desktopWallpaper ~/.local/share/backgrounds/desktop_wallpaper_4K.png
 set $screenshotsPath ~/Pictures/Screenshots
-set $bckgrnd #1D1D1D
-set $forgrnd #FF5500
-set $bar_bckgrnd #00000000
-set $ch_border_focus #FF0000
-set $ch_border_focus_in #AAAAAA
-set $ch_border_urgent #1D1D1D
-set $txt_focus #DBD6AF
-set $txt_focus_in #1D1D1D
-set $txt_unfocus #1D1D1D
-set $txt_focus_ws #DBD6AF
-set $txt_active_ws #DBD6AF
-set $txt_inactive_ws #666677
-set $txt_urgent_ws #666677
-set $txt_binding_mode #666677
-set $white #FFFFFF
+
+# color palette (desktop wallpaper colors)
+set $primary_bg #1D1D1D
+set $primary_orange #FF5500
+set $primary_blue #44AACC
+set $primary_grey #1D1D1D
+
+# other colors
+set $primary_white #FFFFFF
+set $primary_black #000000
+
 set $transparent #00000000
+
+set $inactive_grey #555555
+set $active_grey #BBBBBB
 
 
 
@@ -258,13 +257,12 @@ bindsym $mod+r mode "resize"
 #client.placeholder      $transparent	$transparent    $transparent	$transparent	$transparent
 #client.background       #555555
 
-# class                 border  backgr. text    indicator child_border
-client.focused          #ff5500 #1D1D1D #ffffff #bbbbbb   #bbbbbb
-client.focused_inactive #333333 #1D1D1D #ffffff #444444   #444444
-client.unfocused        #333333 #1D1D1D #888888 #444444   #444444
-client.urgent           #2f343a #1D1D1D #ffffff #900000   #900000
-client.placeholder      #000000 #1D1D1D #ffffff #000000   #0c0c0c
-
+# class                 border                  background              text                    indicator               child_border
+client.focused          $primary_orange         $primary_grey           $primary_white          $inactive_grey          $active_grey
+client.focused_inactive $inactive_grey          $primary_grey           $primary_white          $inactive_grey          $inactive_grey
+client.unfocused        $inactive_grey          $primary_grey           $inactive_grey          $inactive_grey          $inactive_grey
+client.urgent           $transparent            $transparent            $primary_white          $transparent            $transparent
+client.placeholder      $primary_black          $primary_grey           $primary_white          $primary_black          $primary_black
 client.background       $transparent
 
 

@@ -1,5 +1,5 @@
 configuration {
 	modi: "drun,run,window,ssh";
-	show-icons: true;
+	show-icons: false;
 }
-@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+@theme "~/.config/rofi/custom_theme.rasi"
