@@ -55,7 +55,7 @@ You can either change this path where it says **$desktopWallpaper**, or copy the
 
 First, navigate into the cloned **dotfiles** repository.
 
-Then, create the backgrounds folder if it doesn't exist and copy the wallpapers into it:
+Then, create the backgrounds folder and copy the wallpapers into it:
 
 ```bash
 mkdir -p ~/.local/share/backgrounds
