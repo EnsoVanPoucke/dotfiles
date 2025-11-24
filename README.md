@@ -1,7 +1,9 @@
 # dotfiles
 
-These are my personal **Linux** dotfiles - a collection of configuration files.
-You’re welcome to use them as a reference or starting point for your own setup. Some tweaks may be necessary depending on your system.
+These are my personal **Linux** dotfiles - a collection of configuration files. 
+You’re welcome to use them as a reference or starting point for your own setup.
+
+Some tweaks may be necessary depending on your system.
 
 ## Design philosophy
 
