@@ -49,7 +49,7 @@ As it is, the i3 configuration file points to:
 
 **~/.local/share/backgrounds/desktop_wallpaper_4K.png**
 
-You can either change this path where it says **$desktopWallpaper**, or copy the included images to this exact location.
+You can either change this path where it says **$desktopWallpaper**, or copy the included wallpapers to this exact location.
 
 ### Copy wallpapers to the exact location
 
