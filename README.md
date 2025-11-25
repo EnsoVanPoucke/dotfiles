@@ -9,8 +9,7 @@ A minimalistic, modern design built for maximum efficiency. The tiling window ma
 
 ## Screenshots
 
-![Desktop](screenshots/screenshot_desktop.jpg)
-![Rofi Launcher](screenshots/screenshot_rofi.jpg)
+![Desktop with Rofi](screenshots/screenshot_rofi.jpg)
 ![Workspace 1a](screenshots/screenshot_ws1a.jpg)
 ![Workspace 1b](screenshots/screenshot_ws1b.jpg)
 ![Workspace 2](screenshots/screenshot_ws2.jpg)
