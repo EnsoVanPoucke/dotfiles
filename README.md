@@ -35,16 +35,16 @@ git clone https://github.com/EnsoVanPoucke/dotfiles.git
 
 For more information:
 
-- [i3 Window Manager](https://i3wm.org/)
-- [Polybar](https://polybar.github.io/)
-- [Rofi](https://davatorium.github.io/rofi/)
-- [Kitty Terminal](https://sw.kovidgoyal.net/kitty/quickstart/)
-- [Starship Prompt](https://starship.rs/)
-- [Ranger File Manager](https://ranger.fm/)
-- [Music Player Daemon (MPD)](https://www.musicpd.org/)
-- [RMPC](https://rmpc.mierak.dev/)
-- [Picom](https://github.com/yshui/picom)
-- [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
+- <a href="https://i3wm.org/" target="_blank">i3 Window Manager</a>
+- <a href="https://polybar.github.io/" target="_blank">Polybar</a>
+- <a href="https://davatorium.github.io/rofi/" target="_blank">Rofi</a>
+- <a href="https://sw.kovidgoyal.net/kitty/quickstart/" target="_blank">Kitty Terminal</a>
+- <a href="https://starship.rs/" target="_blank">Starship Prompt</a>
+- <a href="https://ranger.fm/" target="_blank">Ranger File Manager</a>
+- <a href="https://www.musicpd.org/" target="_blank">Music Player Daemon (MPD)</a>
+- <a href="https://rmpc.mierak.dev/" target="_blank">RMPC</a>
+- <a href="https://github.com/yshui/picom" target="_blank">Picom</a>
+- <a href="https://www.nerdfonts.com/font-downloads" target="_blank">CaskaydiaCove Nerd Font</a>
 
 ## Installing wallpapers
 
