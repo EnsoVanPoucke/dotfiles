@@ -53,7 +53,12 @@ exec --no-startup-id xset s noblank
 exec --no-startup-id xset dpms 0 0 0
 
 # picom
-exec_always --no-startup-id /usr/local/bin/picom -b --config ~/.config/picom/picom.conf
+#exec_always --no-startup-id /usr/local/bin/picom -b --config ~/.config/picom/picom.conf
+#exec_always --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf -b
+#exec_always --no-startup-id picom --experimental-backends --animations --config ~/.config/picom/picom.conf -b --log-level=debug
+#exec_always --no-startup-id picom --experimental-backends --animations --config ~/.config/picom/picom.conf -b
+
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf -b
 
 
 

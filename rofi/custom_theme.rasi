@@ -51,6 +51,7 @@ window {
     padding:          2;
     background-color: var(background);
     border:           3;
+    width:            1200px;
 }
 mainbox {
     padding: 0;
