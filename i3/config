@@ -246,7 +246,7 @@ bindsym $mod+r mode "resize"
 
 
 # class                 border                  background              text                    indicator               child_border
-client.focused          $primary_orange         $primary_grey           $primary_white          $inactive_grey          $active_grey
+client.focused          $primary_orange         $primary_grey           $primary_white          $active_grey            $active_grey
 client.focused_inactive $inactive_grey          $primary_grey           $primary_white          $inactive_grey          $inactive_grey
 client.unfocused        $inactive_grey          $primary_grey           $inactive_grey          $inactive_grey          $inactive_grey
 client.urgent           $transparent            $transparent            $primary_white          $transparent            $transparent
