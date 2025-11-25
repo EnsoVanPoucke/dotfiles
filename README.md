@@ -7,6 +7,15 @@ You’re welcome to use them as a reference or starting point for your own setup
 
 A minimalistic, modern design built for maximum efficiency. The tiling window manager setup keeps every element functional and purposeful, with components customized to maintain a consistent, distraction-free environment.
 
+## Screenshots
+
+![Desktop](screenshots/screenshot_desktop.jpg)
+![Rofi Launcher](screenshots/screenshot_rofi.jpg)
+![Workspace 1a](screenshots/screenshot_ws1a.jpg)
+![Workspace 1b](screenshots/screenshot_ws1b.jpg)
+![Workspace 2](screenshots/screenshot_ws2.jpg)
+![Workspace 3](screenshots/screenshot_ws3.jpg)
+
 ## Contents
 
 - `i3` – tiling window manager
