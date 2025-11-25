@@ -6,25 +6,25 @@
     draw_borders: true,
     show_song_table_header: true,
     browser_column_widths: [20, 38, 42],
-    background_color: "#1D1D1D",
+    background_color: "#202020",
     text_color: "#BBBBBB",
     header_background_color: None,
-    modal_background_color: "#1D1D1D",
+    modal_background_color: "#202020",
     tab_bar: (
         enabled: true,
-        active_style: (fg: "#1D1D1D", bg: "#BBBBBB", modifiers: "Bold"),
+        active_style: (fg: "#202020", bg: "#BBBBBB", modifiers: "Bold"),
         inactive_style: (),
     ),
-    highlighted_item_style: (fg: "#FF5500", modifiers: "Bold"),
-    current_item_style: (fg: "#1D1D1D", bg: "#BBBBBB", modifiers: "Bold"),
+    highlighted_item_style: (fg: "#FF8800", modifiers: "Bold"),
+    current_item_style: (fg: "#202020", bg: "#BBBBBB", modifiers: "Bold"),
     borders_style: (fg: "#BBBBBB"),
     highlight_border_style: (fg: "#FF0000"),
     symbols: (song: "🎵", dir: "📁", playlist: "🎼", marker: "\u{e0b0}"),
     progress_bar: (
         symbols: ["", "", " "],
-        track_style: (fg: "#1D1D1D"),
-        elapsed_style: (fg: "#FF5500"),
-        thumb_style: (fg: "#BBBBBB", bg: "#1D1D1D"),
+        track_style: (fg: "#202020"),
+        elapsed_style: (fg: "#FF8800"),
+        thumb_style: (fg: "#BBBBBB", bg: "#202020"),
     ),
     scrollbar: (
         symbols: ["│", "█", "▲", "▼"],
@@ -84,9 +84,9 @@
         rows: [
             (
                 left: [
-                    (kind: Text("["), style: (fg: "#FF5500", modifiers: "Bold")),
-                    (kind: Property(Status(StateV2(playing_label: "Playing", paused_label: "Paused", stopped_label: "Stopped"))), style: (fg: "#FF5500", modifiers: "Bold")),
-                    (kind: Text("]"), style: (fg: "#FF5500", modifiers: "Bold"))
+                    (kind: Text("["), style: (fg: "#FF8800", modifiers: "Bold")),
+                    (kind: Property(Status(StateV2(playing_label: "Playing", paused_label: "Paused", stopped_label: "Stopped"))), style: (fg: "#FF8800", modifiers: "Bold")),
+                    (kind: Text("]"), style: (fg: "#FF8800", modifiers: "Bold"))
                 ],
                 center: [
                     (kind: Property(Song(Title)), style: (modifiers: "Bold"),
@@ -94,7 +94,7 @@
                     )
                 ],
                 right: [
-                    (kind: Property(Widget(Volume)), style: (fg: "#FF5500"))
+                    (kind: Property(Widget(Volume)), style: (fg: "#FF8800"))
                 ]
             ),
             (
@@ -107,8 +107,8 @@
                     (kind: Text(" kbps)"))
                 ],
                 center: [
-                    (kind: Property(Song(Artist)), style: (fg: "#FF5500", modifiers: "Bold"),
-                        default: (kind: Text("Unknown"), style: (fg: "#FF5500", modifiers: "Bold"))
+                    (kind: Property(Song(Artist)), style: (fg: "#FF8800", modifiers: "Bold"),
+                        default: (kind: Text("Unknown"), style: (fg: "#FF8800", modifiers: "Bold"))
                     ),
                     (kind: Text(" - ")),
                     (kind: Property(Song(Album)),

@@ -16,14 +16,12 @@ set $desktopWallpaper ~/.local/share/backgrounds/desktop_wallpaper_4K.png
 set $screenshotsPath ~/Pictures/Screenshots
 
 # color palette (desktop wallpaper colors)
-set $primary_bg #1D1D1D
-set $primary_orange #FF5500
-set $primary_blue #44AACC
-set $primary_grey #1D1D1D
-
-# other colors
-set $primary_white #FFFFFF
+set $primary_bg #202020
 set $primary_black #000000
+set $primary_orange #FF8800
+set $primary_blue #44AACC
+set $primary_white #FFFFFF
+set $primary_grey #333333
 
 set $transparent #00000000
 

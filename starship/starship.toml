@@ -1,7 +1,7 @@
 format = """
-[](#FF5500)\
+[](#FF8800)\
 $os\
-[](bg:#FFFFFF fg:#FF5500)\
+[](bg:#FFFFFF fg:#FF8800)\
 $username\
 [](bg:#44AACC fg:#FFFFFF)\
 $directory\
@@ -18,7 +18,7 @@ $git_status\
 # and use the os module below
 [username]
 show_always = true
-style_user = "bg:#FFFFFF fg:#1D1D1D"
+style_user = "bg:#FFFFFF fg:#202020"
 style_root = "bg:#FFFFFF"
 format = '[ $user ]($style)'
 disabled = false
@@ -26,7 +26,7 @@ disabled = false
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
 [os]
-style = "bg:#FF5500 fg:#FFFFFF"
+style = "bg:#FF8800 fg:#FFFFFF"
 format = '[ $name ]($style)'
 disabled = false # Disabled by default
 
