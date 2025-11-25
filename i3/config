@@ -263,8 +263,13 @@ floating_maximum_size 2000 x 1600
 
 default_border pixel 2
 default_floating_border none
-gaps inner 10
-gaps outer 10
+gaps inner 12
+gaps outer 6
+
+
+
+# add border to Visual Studio Code (by default VSC doesn't)
+for_window [class="^Code$"] border pixel 2
 
 
 
