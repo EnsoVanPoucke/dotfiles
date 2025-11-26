@@ -5,7 +5,8 @@ You're welcome to use them as a reference or starting point for your own setup.
 
 ## Design philosophy
 
-A minimalistic, modern design built for maximum efficiency. The tiling window manager setup keeps every element functional, with components customized to maintain a consistent, distraction-free environment.
+A minimalistic, modern system built for efficiency and speed to support a streamlined workflow.
+All components are configured to work together as a cohesive, distraction-free environment, keeping the interface clean and focused.
 
 *[View screenshots](screenshots/)*
 
