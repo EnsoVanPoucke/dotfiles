@@ -21,7 +21,9 @@ A minimalistic, modern design built for maximum efficiency. The tiling window ma
 - [RMPC](https://rmpc.mierak.dev/) – terminal MPD client
 - [Picom](https://github.com/yshui/picom) – compositor
 - [VSCode](https://code.visualstudio.com/) – code editor settings and preferences
-- Wallpapers – matching desktop wallpaper ([CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads) required)
+
+- [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
+- Wallpapers
 
 ## Get started
 
