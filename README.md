@@ -22,7 +22,7 @@ A minimalistic, modern design built for maximum efficiency. The tiling window ma
 - [Starship](https://starship.rs/) – shell prompt customization
 - [VSCode](https://code.visualstudio.com/) – code editor settings and preferences
 - [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
-- Wallpapers
+- [Wallpapers](wallpapers/)
 
 ## Get started
 
