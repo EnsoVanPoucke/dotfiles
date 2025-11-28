@@ -15,6 +15,7 @@ All components are configured to work together as a cohesive, distraction-free e
 - [i3](https://i3wm.org/) – tiling window manager
 - [Kitty](https://sw.kovidgoyal.net/kitty/quickstart/) – terminal emulator
 - [MPD](https://www.musicpd.org/) – music player daemon
+- [PCManFM](https://github.com/lxde/pcmanfm) – fast & lightweight file manager
 - [Picom](https://github.com/yshui/picom) – compositor
 - [Polybar](https://polybar.github.io/) – status bar
 - [Ranger](https://ranger.fm/) – terminal file manager
