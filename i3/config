@@ -1,8 +1,10 @@
-#####################################
+############################################################################
 # i3 CONFIGURATION FILE
-#####################################
-
+#
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
+#
+############################################################################
+
 
 
 
@@ -271,9 +273,9 @@ gaps outer 6
 
 
 
-###########################################################
+#######################################
 # ADDITIONAL WINDOW RULES
-###########################################################
+#######################################
 
 for_window [title="Exit Options"] floating enable, move position center
 for_window [class="Code"] border pixel 2 # focus_on_window_activation smart|urgent|focus|none
@@ -282,9 +284,9 @@ for_window [class="Code"] border pixel 2 # focus_on_window_activation smart|urge
 
 
 
-###########################################################
+#######################################
 # WORKSPACE AUTO STARTUPS AND LAYOUTS
-###########################################################
+#######################################
 
 # Workspace 1:
 exec_always --no-startup-id /usr/bin/code --new-window
