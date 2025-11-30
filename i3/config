@@ -7,7 +7,6 @@
 
 
 
-
 # variables
 set $desktopWallpaper ~/.local/share/backgrounds/desktop_wallpaper_4K.png
 set $screenshotsPath ~/Pictures/Screenshots
@@ -36,13 +35,6 @@ exec_always --no-startup-id feh --bg-fill $desktopWallpaper
 # polybar (instead of the default i3 statusbar
 exec_always --no-startup-id killall polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
-
-# Ensure required RMPC directories extist
-# exec --no-startup-id mkdir -p /tmp/rmpc/cache
-# exec --no-startup-id mkdir -p ~/.config/rmpc
-
-# start mpd (rmpc server)
-# exec --no-startup-id mpd ~/.config/mpd/mpd.conf
 
 # disable screen shutdown - only standby after 40 minutes with a black screen instead of 10 minutes
 exec --no-startup-id xset s 2400
@@ -118,10 +110,10 @@ bindsym $mod+d exec rofi -show drun
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+# bindsym $mod+j focus left
+# bindsym $mod+k focus down
+# bindsym $mod+l focus up
+# bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -130,10 +122,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+# bindsym $mod+Shift+j move left
+# bindsym $mod+Shift+k move down
+# bindsym $mod+Shift+l move up
+# bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -165,7 +157,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+# bindsym $mod+d focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -277,8 +269,8 @@ gaps outer 6
 # ADDITIONAL WINDOW RULES
 #######################################
 
-for_window [title="Exit Options"] floating enable, move position center
-for_window [class="Code"] border pixel 2
+for_window [title="Exit Options"] floating enable, move position center # make the Exit Options window floating and centered
+for_window [class="Code"] border pixel 2 # add border to Visual Studio Code (by default VSC doesn't get borders in i3)
 
 
 
@@ -291,15 +283,10 @@ for_window [class="Code"] border pixel 2
 # Workspace 1:
 exec_always --no-startup-id /usr/bin/code --new-window
 for_window [class="Code"] move to workspace $ws1
-# add border to Visual Studio Code (by default VSC doesn't)
-
-
 
 # Workspace 2:
 exec_always --no-startup-id brave-browser --new-window "https://www.google.com"
 for_window [class="Brave-browser"] move to workspace $ws2
-
-
 
 # Workspace 4:
 exec_always --no-startup-id sh -c "i3-msg 'workspace 4; append_layout ~/.config/i3/layouts/layout_ws4.json'"
