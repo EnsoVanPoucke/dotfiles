@@ -24,4 +24,5 @@ All components are configured to work together as a cohesive, distraction-free e
 - [Starship](https://starship.rs/) – shell prompt customization
 - [VSCode](https://code.visualstudio.com/) – code editor settings and preferences
 - [CaskaydiaCove Nerd Font](https://www.nerdfonts.com/font-downloads)
+- [Custom Scripts](scripts/) – exit options menu and future utilities
 - [Wallpapers](wallpapers/)
