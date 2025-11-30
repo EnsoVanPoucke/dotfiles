@@ -210,9 +210,8 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-# Exit window
+# Exit options script
 bindsym $mod+Shift+e exec python3 ~/.config/scripts/exitOptions.py
-for_window [title="Exit Options"] floating enable, move position center, border pixel 0
 
 
 
@@ -253,6 +252,8 @@ client.urgent           $transparent            $transparent            $primary
 client.placeholder      $primary_black          $primary_grey           $primary_white          $primary_black          $primary_black
 client.background       $transparent
 
+focus_on_window_activation urgent
+
 
 
 # size <width> x <height>
@@ -262,42 +263,44 @@ floating_maximum_size 2000 x 1600
 
 
 default_border pixel 2
-default_floating_border none
+#default_floating_border none
 gaps inner 12
 gaps outer 6
 
 
 
-# focus_on_window_activation smart|urgent|focus|none
-focus_on_window_activation urgent
 
 
-
-# LAYOUTS FOR WORKSPACES:
-
-# Workspace 1
 ###########################################################
+# ADDITIONAL WINDOW RULES
+###########################################################
+
+for_window [title="Exit Options"] floating enable, move position center
+for_window [class="Code"] border pixel 2 # focus_on_window_activation smart|urgent|focus|none
+
+
+
+
+
+###########################################################
+# WORKSPACE AUTO STARTUPS AND LAYOUTS
+###########################################################
+
+# Workspace 1:
 exec_always --no-startup-id /usr/bin/code --new-window
-for_window [class="^Code$"] move to workspace $ws1
+for_window [class="Code"] move to workspace $ws1
 # add border to Visual Studio Code (by default VSC doesn't)
-for_window [class="^Code$"] border pixel 2
 
 
 
-# Workspace 2
-###########################################################
+# Workspace 2:
 exec_always --no-startup-id brave-browser --new-window "https://www.google.com"
 for_window [class="Brave-browser"] move to workspace $ws2
 
 
 
-# Workspace 4
-###########################################################
-# Apply the layout for workspace 4
+# Workspace 4:
 exec_always --no-startup-id sh -c "i3-msg 'workspace 4; append_layout ~/.config/i3/layouts/layout_ws4.json'"
-
-# Launch two file manager windows and a terminal window
 exec_always --no-startup-id sh -c "sleep 0.4 && pcmanfm"
 exec_always --no-startup-id sh -c "sleep 0.2 && pcmanfm"
 exec_always --no-startup-id sh -c "sleep 0.6 && ~/.local/kitty.app/bin/kitty"
-
