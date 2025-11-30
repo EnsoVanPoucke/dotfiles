@@ -254,7 +254,7 @@ client.urgent           $transparent            $transparent            $primary
 client.placeholder      $primary_black          $primary_grey           $primary_white          $primary_black          $primary_black
 client.background       $transparent
 
-focus_on_window_activation urgent
+focus_on_window_activation urgent  # focus_on_window_activation smart|urgent|focus|none
 
 
 
@@ -278,7 +278,7 @@ gaps outer 6
 #######################################
 
 for_window [title="Exit Options"] floating enable, move position center
-for_window [class="Code"] border pixel 2 # focus_on_window_activation smart|urgent|focus|none
+for_window [class="Code"] border pixel 2
 
 
 
