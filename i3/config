@@ -42,17 +42,12 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # start mpd (rmpc server)
 # exec --no-startup-id mpd ~/.config/mpd/mpd.conf
 
-# disable screen shutdown - only standby after 40 minutes with a black screen  instead of 10 minutes
+# disable screen shutdown - only standby after 40 minutes with a black screen instead of 10 minutes
 exec --no-startup-id xset s 2400
 exec --no-startup-id xset s noblank
 exec --no-startup-id xset dpms 0 0 0
 
 # picom
-#exec_always --no-startup-id /usr/local/bin/picom -b --config ~/.config/picom/picom.conf
-#exec_always --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf -b
-#exec_always --no-startup-id picom --experimental-backends --animations --config ~/.config/picom/picom.conf -b --log-level=debug
-#exec_always --no-startup-id picom --experimental-backends --animations --config ~/.config/picom/picom.conf -b
-
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf -b
 
 
@@ -273,10 +268,36 @@ gaps outer 6
 
 
 
+# focus_on_window_activation smart|urgent|focus|none
+focus_on_window_activation urgent
+
+
+
+# LAYOUTS FOR WORKSPACES:
+
+# Workspace 1
+###########################################################
+exec_always --no-startup-id /usr/bin/code --new-window
+for_window [class="^Code$"] move to workspace $ws1
 # add border to Visual Studio Code (by default VSC doesn't)
 for_window [class="^Code$"] border pixel 2
 
 
 
-# focus_on_window_activation smart|urgent|focus|none
-focus_on_window_activation urgent
+# Workspace 2
+###########################################################
+exec_always --no-startup-id brave-browser --new-window "https://www.google.com"
+for_window [class="Brave-browser"] move to workspace $ws2
+
+
+
+# Workspace 4
+###########################################################
+# Apply the layout for workspace 4
+exec_always --no-startup-id sh -c "i3-msg 'workspace 4; append_layout ~/.config/i3/layouts/layout_ws4.json'"
+
+# Launch two file manager windows and a terminal window
+exec_always --no-startup-id sh -c "sleep 0.4 && pcmanfm"
+exec_always --no-startup-id sh -c "sleep 0.2 && pcmanfm"
+exec_always --no-startup-id sh -c "sleep 0.6 && ~/.local/kitty.app/bin/kitty"
+
