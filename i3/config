@@ -211,8 +211,15 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# Exit window
+bindsym $mod+Shift+e exec python3 ~/.config/scripts/exitOptions.py
+for_window [title="Exit Options"] floating enable, move position center, border pixel 0
+
+
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -254,7 +261,7 @@ client.background       $transparent
 
 
 # size <width> x <height>
-floating_minimum_size 400 x 300
+floating_minimum_size 250 x 50
 floating_maximum_size 2000 x 1600
 
 
