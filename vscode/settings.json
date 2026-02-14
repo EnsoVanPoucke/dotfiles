@@ -149,5 +149,8 @@
                 }
             }
         ]
-    }
+    },
+    "redhat.telemetry.enabled": true,
+    "chat.viewSessions.orientation": "stacked",
+    "explorer.confirmDragAndDrop": false
 }
