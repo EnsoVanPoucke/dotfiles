@@ -281,12 +281,12 @@ for_window [class="Code"] border pixel 2 # add border to Visual Studio Code (by 
 #######################################
 
 # Workspace 1:
-exec_always --no-startup-id /usr/bin/code --new-window
-for_window [class="Code"] move to workspace $ws1
+exec_always --no-startup-id brave-browser --new-window "https://www.google.com"
+for_window [class="Brave-browser"] move to workspace $ws1
 
 # Workspace 2:
-exec_always --no-startup-id brave-browser --new-window "https://www.google.com"
-for_window [class="Brave-browser"] move to workspace $ws2
+exec_always --no-startup-id /usr/bin/code --new-window
+for_window [class="Code"] move to workspace $ws2
 
 # Workspace 4:
 exec_always --no-startup-id sh -c "i3-msg 'workspace 4; append_layout ~/.config/i3/layouts/layout_ws4.json'"
