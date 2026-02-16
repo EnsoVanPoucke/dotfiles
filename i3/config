@@ -285,17 +285,14 @@ for_window [class="Code"] border pixel 2 # add border to Visual Studio Code (by 
 
 # Workspace 11:
 exec_always --no-startup-id brave-browser --new-window "https://www.google.com"
-#for_window [class="Brave-browser"] move to workspace $ws0 # --- IGNORE --- older syntax, replaced by the assign rule below
-assign [class="Brave-browser"] $ws0
+assign [class="Brave-browser"] $ws1
 
 # Workspace 1:
 exec_always --no-startup-id /usr/bin/code --new-window
-#for_window [class="Code"] move to workspace $ws1 # --- IGNORE --- older syntax, replaced by the assign rule below
-assign [class="Code"] $ws1
+assign [class="Code"] $ws2
 
 # Workspace 4:
-# exec_always --no-startup-id sh -c "i3-msg 'workspace 4; append_layout ~/.config/i3/layouts/layout_ws4.json'" # --- IGNORE --- older syntax, replaced by the line below
-exec_always --no-startup-id sh -c "i3-msg 'workspace $ws4; append_layout ~/.config/i3/layouts/layout_ws4.json'"
+exec_always --no-startup-id sh -c "i3-msg 'workspace $ws0; append_layout ~/.config/i3/layouts/layout_ws0.json'"
 exec_always --no-startup-id sh -c "sleep 0.4 && pcmanfm"
 exec_always --no-startup-id sh -c "sleep 0.2 && pcmanfm"
 exec_always --no-startup-id sh -c "sleep 0.6 && ~/.local/kitty.app/bin/kitty"
