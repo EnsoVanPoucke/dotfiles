@@ -152,5 +152,13 @@
     },
     "redhat.telemetry.enabled": true,
     "chat.viewSessions.orientation": "stacked",
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.fontSize": 15,
+    "window.zoomLevel": 1,
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.iconTheme": "material-icon-theme"
 }
