@@ -274,6 +274,7 @@ gaps outer 6
 
 for_window [title="Exit Options"] floating enable, move position center # make the Exit Options window floating and centered
 for_window [class="Code"] border pixel 2 # add border to Visual Studio Code (by default VSC doesn't get borders in i3)
+for_window [class="Gedit"] border pixel 2 # add border to Gedit (by default Gedit doesn't get borders in i3)
 
 
 
